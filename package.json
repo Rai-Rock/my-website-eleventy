@@ -1,0 +1,24 @@
+{
+  "name": "Sito personale",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rai-Rock/my-website-eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rai-Rock/my-website-eleventy/issues"
+  },
+  "homepage": "https://github.com/Rai-Rock/my-website-eleventy#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

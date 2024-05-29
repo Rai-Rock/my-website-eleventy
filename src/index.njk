@@ -1,0 +1,35 @@
+---
+title: Home
+layout: 'base.njk'
+---
+      
+<section class="hero">
+  <div class="container flow">
+      <div class="hero__content flow">
+        <h1 class="section-title">Ciao, sono Riccardo</h1>
+        <p>Sono nato studente di Design e ho poi scoperto il mio interresse per il mondo della finanza.
+        Sono alla costante ricerca del mio posto del mondo e mi piace nutrire la mia curiosità.
+        Questo è il mio piccolo regno sull'Internet dove raccolgo i miei pensieri, se vuoi farmi sapere la tua:</p>
+        <div class="flex-group">
+          <a href="./contatti" class="btn btn--primary">Scrivimi</a>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section id="featured-articles" class="featured-articles">
+  <div class="container flow ">
+    <h2 class="section-title text-center ">Ultimi Articoli</h2>
+    <p class="text-center">Una lista di pensieri che forse trasformerò in una newsletter</p>
+    <ul role="list" class="articles__list flow">
+
+      {%- for post in collections.featured | reverse -%}
+        {% include 'article-snippet.njk' %}
+      {%- endfor %} 
+    
+    </ul>
+  </div>
+</section> 
+
+
+
